@@ -13,6 +13,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
+        ./hardware-configuration.nix
         {
           nixpkgs.hostPlatform = {
             system = "x86_64-linux";
